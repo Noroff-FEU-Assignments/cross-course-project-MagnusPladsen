@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guitar Kings</title>
+        <meta name="description" content="This is a page about selling guitars" >
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" >
+        <link href="./css/styles.css" type="text/css" rel="stylesheet" >
+        <!---------------------- GOOGLE FONTS ----------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navigation dark-bg">
+            <a class="nav-header" href="./index.html">Guitar Kings</a>
+            <a href="./index.html">Home</a>
+            <a href="./guitars.html">Guitars</a>
+            <a href="./contact.html" class="current">Contact</a>
+        </nav>
+        </nav>
+        <main class="contact">
+            <h1>Contact us</h1>
+
+            <form>
+                <div class="form-container">
+                    <div class="form-left-column">
+                        <label for="fullname">Full Name</label><input type="text" name="fullname">
+                        <label for="email">Email</label><input type="text" name="email">
+                        <label for="guitars">Guitar</label>
+                        <select name="guitars" id="guitars">
+                            <option value="adirondack-red">Adirondack Red</option>
+                            <option value="adirondack-red">Adirondack Red</option>
+                            <option value="adirondack-red">Adirondack Red</option>
+                            <option value="adirondack-red">Adirondack Red</option>
+                        </select>
+                        <input type="checkbox" name="email-updates" value="email-updates" id="email-updates"><label for="email-updates">Sign up for email updates.</label>
+                    </div>
+                    <div class="form-right-column">
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="SEND NOW">
+            </form>
+
+        </main>
+       <footer>
+            <p class="copy dark-bg">Copyright &copy;</p>
+       </footer> 
+    </body>
+</html>
