@@ -1,0 +1,264 @@
+/* DEFINE COLORS
+---------------------*/
+:root {
+    --main-color: #1D2540;
+    --bg-color: #E1E5EA;
+    --border-color: #707070;
+}
+
+
+
+/* BODY AND UNIVERSAL
+---------------------*/
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+
+/*       CTA
+---------------------*/
+.cta {
+    position: relative;
+    border-radius: 2em;
+    background-color: var(--main-color);
+    padding: 10px 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 1px solid var(--border-color);
+    top: -3em;
+}
+
+.cta-games {
+    border: 1px solid var(--border-color);
+    color: var(--main-color);
+    background-color: white;
+}
+
+
+.cta-cart:hover {
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+.cta-games:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+
+
+/*       MAIN
+---------------------*/
+main {
+    position: absolute;
+    width: 70vw;
+    text-align: center;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logo {
+    position: relative;
+    top: 6em;
+    max-width: 20em;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+
+
+
+
+/*      HEADER
+---------------------*/
+header {
+    position: relative;
+    top: 4em;
+}
+
+
+
+/*      SECTION
+---------------------*/
+section {
+    position: relative;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 5em;
+    height: 60vh;
+    top: 4em;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50vw;
+}
+
+section p {
+    position: relative;
+    font-size: 1.5em;
+    top: 5em;
+}
+
+.grid-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0em;
+    max-width: 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0em;
+    height: 50vh;
+}
+
+.left-column {
+    max-width: 20vw;
+}
+
+.left-column img {
+    max-width: 15em;
+}
+
+.left-column img {
+    position: relative;
+    top: 5em;
+}
+
+.right-column {
+    max-width: 20vw;
+    text-align: left;
+}
+
+.right-column p {
+    top: 2em;
+}
+
+.total {
+    top: 1em;
+}
+
+.game-description {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+
+
+
+/*   MEDIA QUERIES
+---------------------*/
+/* SMALL DESKTOP */
+@media screen and (max-width: 1300px) {
+    .grid-container {
+        gap: 3em;
+        max-height: 40vh;
+    }
+    section {
+        height: 60vh;
+    }
+
+}
+
+
+
+/* TABLET  */
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100vw;
+    }
+    section {
+        width: 90vw;
+    }
+    .grid-container {
+        max-width: 70vw;
+    }
+    header h1 {
+        display: none;
+    }
+    header {
+        margin-top: 1em;
+    }
+    section p {
+        font-size: 1.3em;
+        top: 2em;
+    }
+    .cta-games {
+        top: 7em;
+    }
+    .section-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 30vw;
+        gap: 3em;
+        margin: 0 auto;
+    }
+    .right-column {
+        max-width: 70vw;
+        height: 35vh;
+    }
+}
+
+
+
+
+/* MOBILE  */
+@media screen and (max-width: 790px) {
+    .left-column img {
+        max-width: 12em;
+        margin-top: -3em;
+    }
+    .left-column {
+       max-width: 70vw;
+       height: 35vh;
+    }
+    .right-column {
+        max-width: 70vw;
+        height: 35vh;
+    }
+    .right-column p {
+        margin-top: -1em;
+        font-size: 1em;
+        width: 70vw;
+    }
+    .grid-container {
+        gap: 0;
+        /* max-height: 40vh; */
+        width: 90vw;
+        grid-template-columns: 1fr;
+    }
+    section {
+        height: 80vh;
+    }
+    .section-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 70vw;
+        gap: 1em;
+        margin: 0 auto;
+    }
+    .cta {
+        padding: 10px 30px !important;
+        top: 10em;
+    }
+}

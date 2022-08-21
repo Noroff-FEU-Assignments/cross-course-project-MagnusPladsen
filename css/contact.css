@@ -1,0 +1,157 @@
+/* DEFINE COLORS
+---------------------*/
+:root {
+    --main-color: #1D2540;
+    --bg-color: #E1E5EA;
+    --border-color: #707070;
+}
+
+
+
+/* BODY AND UNIVERSAL
+---------------------*/
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+
+/*       MAIN
+---------------------*/
+main {
+    position: absolute;
+    width: 70vw;
+    text-align: center;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+
+
+
+/*      HEADER
+---------------------*/
+header {
+    position: relative;
+    top: 4em;
+}
+
+
+
+/*      SECTION
+---------------------*/
+section {
+    position: relative;
+    top: 3em;
+    max-width: 30vw;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+form {
+    position: relative;
+    display: grid;
+    gap: 1.5em;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: -1em;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    border-radius: 1em;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    color: var(--border-color);
+}
+
+textarea {
+    height: 12em;
+    margin-bottom: 1.5em;
+}
+
+.cta-message {
+    border-radius: 2em;
+    border: 1px solid var(--border-color);
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--main-color);
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.cta-message:hover {
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+
+/*   MEDIA QUERIES
+---------------------*/
+/* SMALL DESKTOP */
+@media screen and (max-width: 1300px) {
+    header {
+        top: 2em;
+    }
+    section {
+        top: 1em;
+    }
+}
+
+
+
+/* TABLET  */
+@media screen and (max-width: 1000px) {
+    header h1 {
+        display: none;
+    }
+    header {
+        margin-top: 5em;
+    }
+    section {
+        max-width: 70vw;
+    }
+    main {
+        width: 100vw;
+    }
+    input,
+    textarea {
+        padding: 5px;
+        font-size: 1.3em;
+    }
+    .cta-message {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+/* MOBILE  */
+@media screen and (max-width: 790px) {
+    section {
+        max-width: 80vw;
+    }
+}
