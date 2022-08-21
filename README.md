@@ -14,3 +14,8 @@ Consider how your page will look across various screen sizes (eg. Single column 
 Write your CSS following the DRY principle.
 Ensure you’re making regular commits to your repository. You must use the repository you created on GitHub Classroom in Web and Communications Technology. Remember, you can view the files locally on your computer before your push changes to your repository.
 Submit a link to the deployed site on Netlify.
+
+
+
+
+TO FOLLOW COMMITS STEP BY STEP https://github.com/MagnusPladsen/Game-Hub
